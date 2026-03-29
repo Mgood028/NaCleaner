@@ -1,0 +1,11 @@
+Package: nacleaner
+Title: Automated NA Handling and Data Cleaning Tools
+Version: 0.0.0.1
+Authors@R: person('Mason', 'Good', email = 'masongood@usf.edu', role = c('aut', 'cre'))
+Description: Provides automated functions for detecting and removing missing values (NAs) from datasets.
+Depends: R (>= 3.1.2)
+License: CC0
+LazyData: false
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3

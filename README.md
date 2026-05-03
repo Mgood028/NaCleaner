@@ -1,6 +1,7 @@
 # nacleaner
 
 A small R package for handling missing values in data frames.
+BLOG: https://masons-programming-journal.blogspot.com/2026/05/new-and-improved-na-cleaner.html
 
 # What It Does
 

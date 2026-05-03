@@ -17,7 +17,7 @@ Three functions for the most common NA tasks:
 # install devtools first if needed
 install.packages("devtools")
 
-devtools::install_github("Mgood028/NaCleaner")
+devtools::install_github("Mgood028/NaCleaner", build_vignettes = TRUE)
 ```
 
 # Example 
@@ -39,5 +39,5 @@ filled <- fill_na(airquality, method = "median")
 
 # Documentation
 
-See `man/nacleaner_guide.Rmd` for a full guide on the package using airquality dataset.
 
+After installing, run `browseVignettes("nacleaner")` for a full guide using the airquality dataset.

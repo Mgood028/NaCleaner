@@ -1,11 +1,10 @@
 Package: nacleaner
-Title: Automated NA Handling and Data Cleaning Tools
-Version: 0.0.0.1
-Authors@R: person('Mason', 'Good', email = 'masongood@usf.edu', role = c('aut', 'cre'))
-Description: Provides automated functions for detecting and removing missing values (NAs) from datasets.
-Depends: R (>= 3.1.2)
+Title: Simple Tools for Handling Missing Values
+Version: 0.1.0
+Authors@R: person("Mason", "Good", email = "masongood@usf.edu", role = c("aut", "cre"))
+Description: Provides three simple functions for working with missing values in data frames: reporting where NAs occur, dropping rows that contain them, and filling them with column statistics. Built as a final project for LIS 4370 R Programming.
 License: CC0
-LazyData: false
 Encoding: UTF-8
+LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.3
+Config/roxygen2/version: 8.0.0

@@ -6,9 +6,9 @@ A small R package for handling missing values in data frames.
 
 Three functions for the most common NA tasks:
 
-- `na_report()` shows where NAs are, with counts and percentages
-- `drop_na_rows()` removes rows containing any NA
-- `fill_na()` replaces NAs with column mean or median
+`na_report()` shows where NAs are, with counts and percentages
+`drop_na_rows()` removes rows containing any NA
+`fill_na()` replaces NAs with column mean or median
 
 # Install
 

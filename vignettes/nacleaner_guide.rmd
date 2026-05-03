@@ -1,19 +1,23 @@
 ---
-title: "nacleaner guide"
-output: html_document
-date: "2026-05-03"
-author: "Mason Good"
+title: "NaCleaner Guide"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{NaCleaner Guide}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
 ---
 
 # About This Package
 
 I built `nacleaner` as my final project for LIS 4370 R Programming. The
-package handles missing values in data frames.
-There are bigger and more capable packages out there (mice or naniar) that I took inspiration from but wanted to try to build my own. 
+package handles missing values in data frames. There are bigger and more
+capable packages out there (mice or naniar) that I took inspiration from
+but wanted to try to build my own.
 
 # The Dataset
 
-For testing I used the built-in `airquality` dataset which includes na values. 
+For testing I used the built-in `airquality` dataset which includes na
+values.
 
 ```{r}
 library(nacleaner)
@@ -29,7 +33,6 @@ percentage for each column.
 ```{r}
 na_report(airquality)
 ```
-
 
 # Function 2: drop_na_rows()
 
@@ -54,17 +57,19 @@ filled <- fill_na(airquality, method = "median")
 na_report(filled)
 ```
 
-I used median in the example because Ozone is right-skewed and the
-mean would be pulled up by high readings.
+I used median in the example because Ozone is right-skewed and the mean
+would be pulled up by high readings.
 
 # What I Would Add Next
 
 If I keep working on this I would add:
 
-- A method that imputes by group
-- Visualization of the NA pattern
-- Handling of character columns
+-   A method that imputes by group
+-   Visualization of the NA pattern
+-   Handling of character columns
 
 # AI Disclosure
 
-I used Claude to help debug my package. For whatever reason my description file kept giving me lots of issues. Claude helped me generate a description file that the devtools::check() liked. 
+I used Claude to help debug my package. For whatever reason my
+description file kept giving me lots of issues. Claude helped me
+generate a description file that the devtools::check() liked.

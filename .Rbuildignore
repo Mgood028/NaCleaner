@@ -1,2 +1,4 @@
 ^nacleaner\.Rproj$
 ^\.Rproj\.user$
+^doc$
+^Meta$

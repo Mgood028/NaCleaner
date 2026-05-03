@@ -2,7 +2,7 @@
 % Please edit documentation in R/na_report.r
 \name{na_report}
 \alias{na_report}
-\title{Report Missing Values in a Data Frame}
+\title{Report Missing Values}
 \usage{
 na_report(data)
 }
@@ -10,10 +10,10 @@ na_report(data)
 \item{data}{A data frame}
 }
 \value{
-An object of class "na_report" with NA counts and percentages
+A data frame of class "na_report" with columns variable, missing, percent
 }
 \description{
-Counts NA values for each column and returns a summary.
+Returns counts and percentages of NAs for each column in a data frame.
 }
 \examples{
 na_report(airquality)

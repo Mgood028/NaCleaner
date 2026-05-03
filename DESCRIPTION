@@ -3,9 +3,11 @@ Title: Simple Tools for Handling Missing Values
 Version: 0.1.0
 Authors@R: person("Mason", "Good", email = "masongood@usf.edu", role = c("aut", "cre"))
 Description: Provides three simple functions for working with missing values in data frames.
-License: CC0
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 Config/roxygen2/version: 8.0.0
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
 URL: https://github.com/Mgood028/NaCleaner/

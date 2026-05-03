@@ -8,7 +8,7 @@ author: "Mason Good"
 # About This Package
 
 I built `nacleaner` as my final project for LIS 4370 R Programming. The
-package handles one specific problem: missing values in data frames.
+package handles missing values in data frames.
 There are bigger and more capable packages out there (mice or naniar) that I took inspiration from but wanted to try to build my own. 
 
 # The Dataset
@@ -22,7 +22,7 @@ summary(airquality)
 
 # Function 1: na_report()
 
-The first thing you usually want to know is *where* the missing values
+The first thing you usually want to know is where the missing values
 are. `na_report()` returns a small data frame showing the count and
 percentage for each column.
 
@@ -30,10 +30,6 @@ percentage for each column.
 na_report(airquality)
 ```
 
-I gave the result an S3 class so it prints with a header instead of
-looking like a plain data frame. This was my first time writing an S3
-method and it took me a while to get the `print.na_report` function
-to dispatch correctly.
 
 # Function 2: drop_na_rows()
 

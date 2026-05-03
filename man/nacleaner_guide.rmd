@@ -61,7 +61,7 @@ mean would be pulled up by high readings.
 
 If I keep working on this I would add:
 
-- A method that imputes by group (fill within each Month for example)
+- A method that imputes by group
 - Visualization of the NA pattern
 - Handling of character columns
 

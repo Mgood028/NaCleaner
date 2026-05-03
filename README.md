@@ -7,7 +7,7 @@ BLOG: https://masons-programming-journal.blogspot.com/2026/05/new-and-improved-n
 
 Three functions for the most common NA tasks:
 
-`na_report()` shows where NAs are, with counts and percentages
+`na_report()` shows where NAs are, with counts and percentages (returns an S3 object with a custom print method)
 `drop_na_rows()` removes rows containing any NA
 `fill_na()` replaces NAs with column mean or median
 
